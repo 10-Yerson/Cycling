@@ -1,9 +1,9 @@
 
-import Layout from "../../Components/Layout"
-import { IconName } from 'boxicons'
+import Layout from "../../Components/Layout"  // Importamos el layout para usarlo aqui
+import { IconName } from 'boxicons'   // Importamos Boxicons Para usar iconos 
 
 
-function Biographies() {
+function Biographies() {  // Aqui se crea un Funcion que retorda la Biografia 
     return (
         <div className="bg-gray-100 font-sans pt-48 h-screen">
             <div class="container mx-auto p-8">
@@ -36,17 +36,12 @@ function Biographies() {
                             <box-icon type='logo' name='gmail' size='' animation=""></box-icon>
 
                         </div>
-
                     </ul>
                 </section>
-
-
             </div>
-
-
         </div>
 
     )
 }
 
-export default Biographies
+export default Biographies  // Aqui se exporta la Biographies para usarlo

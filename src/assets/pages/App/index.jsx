@@ -1,33 +1,35 @@
 
-import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { useRoutes, BrowserRouter } from 'react-router-dom'  // Para usar la rutas del proyecto 
 import Home from '../Home'
 import Cyclist from '../Cyclist'
-import Competition from '../Competition'
-import Biographies from '../Biographies'
+import Biographies from '../Biographies'                    // Importamos todas las ventanas del proyecto
+import { CartContextProvider } from '../../Context'
 
 import React from 'react'
 
-import './App.css'
+import './App.css'   // Para los estolos del Taiwind 
 import Navbar from '../../Components/Navbar'
 
 
 
-const AppRouter = () => {
+const AppRouter = () => { // Aqui creamos una Cont para poder usar la rutas
     let routes = useRoutes([
         { path: '/', element: <Home /> },
-        { path: '/Cyclist', element: <Cyclist /> },
-        { path: '/Competition', element: <Competition /> },
+        { path: '/Cyclist', element: <Cyclist /> },,
         { path: '/Biographies', element: <Biographies /> }
     ])
     return routes
 }
 
-const App = () => {
+const App = () => {  // Aqui es lo que se va a mostrar en la App
     return (
-        <BrowserRouter>
-            <Navbar />
-            <AppRouter /> 
-        </BrowserRouter>
+        <CartContextProvider>
+            <BrowserRouter>
+                <Navbar /> 
+                <AppRouter />
+            </BrowserRouter>
+        </CartContextProvider>
+        
     )
 }
 

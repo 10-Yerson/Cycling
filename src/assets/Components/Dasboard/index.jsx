@@ -1,7 +1,7 @@
 
-import { IconName } from 'boxicons'
-import './main.css'
-const Card = () => {
+import { IconName } from 'boxicons'  // Aqui importamos la libreria de BoxIcons para los iconos 
+
+const Card = () => {   // Aqui se crea una función que muestra contenido la pagina principal al ingresar
     return (
         <div className="pt-48 p-5">
             <h1 className='text-4xl font-bold text-star pt-10 animate-pulse pl-16'>Free Wheel Colombia</h1>
@@ -23,7 +23,7 @@ const Card = () => {
                 </div>
 
             </div>
-            <div className='pt-16 pl-16'>
+            <div className='pt-16 pl-16'> 
                 <box-icon type='logo' name='google' size='md' animation=""></box-icon>
                 <box-icon type='logo' name='github' size='md' animation=""></box-icon>
                 <box-icon type='logo' name='facebook' size='md' animation=""></box-icon>
@@ -38,3 +38,4 @@ const Card = () => {
 }
 
 export default Card
+
