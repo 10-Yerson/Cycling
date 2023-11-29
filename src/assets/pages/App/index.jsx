@@ -21,7 +21,7 @@ const AppRouter = () => { // Aqui creamos una Cont para poder usar la rutas
     return routes
 }
 
-const App = () => {  // Aqui es lo que se va a mostrar en la App
+const App = () => {  // Aqui es lo que se va a mostrar en la App como la barra de navegacion
     return (
         <CartContextProvider>
             <BrowserRouter>
